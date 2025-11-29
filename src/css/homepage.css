@@ -1,0 +1,52 @@
+.background {
+  /* 1. Set the image path */
+  background-image: url("../images/homepage-background-photo.jpg");
+
+  /* 2. Ensure it covers the entire screen, preventing cuts/breaks */
+  background-size: cover;
+
+  /* 3. Center the image, so if cropping occurs, the focus area is preserved */
+  background-position: center center;
+
+  /* 4. Ensure the image doesn't tile if it's smaller than the screen */
+  background-repeat: no-repeat;
+
+  /* 5. (Optional but recommended) Fixes the image relative to the viewport */
+  background-attachment: fixed;
+}
+
+/* Dropdown Menu */
+#menu {
+  position: absolute;
+  top: 100%; /* directly below navbar */
+  right: 0; /* aligned to right */
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* hide content when collapsed */
+  max-height: 0; /* hidden initially */
+  transition: max-height 0.3s ease;
+  z-index: 999;
+}
+
+.menu-link:hover {
+  color: #fbbf24;
+}
+
+#menu a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+#menu a:hover {
+  background-color: #444;
+}
+
+/* Active dropdown */
+#menu.active {
+  max-height: 400px; /* adjust depending on number of links */
+}
