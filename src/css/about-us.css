@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.first-container {
+  /* 1. Set the image path */
+  background-image: url("../images/homepage-background-photo.jpg");
+
+  /* 2. Ensure it covers the entire screen, preventing cuts/breaks */
+  background-size: cover;
+
+  /* 3. Center the image, so if cropping occurs, the focus area is preserved */
+  background-position: center center;
+
+  /* 4. Ensure the image doesn't tile if it's smaller than the screen */
+  background-repeat: no-repeat;
+}
