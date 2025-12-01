@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+  </head>
+  <body>
+    <div
+      class="w-full h-[85px] lg:h-[110px] min-w-[320px] max-w-[640px] sm:max-w-full sm:mx-auto border-b border-gray-300"
+    >
+      <!-- Nav bar -->
+      <nav class="w-full h-16 flex relative md:h-24">
+        <div class="flex-1 h-full flex items-center">
+          <p class="text-3xl sm:text-4xl font-semibold ml-5 lg:ml-15 mt-5">
+            TechStack
+          </p>
+        </div>
+
+        <div class="flex-1 h-full flex justify-end items-center">
+          <!-- Desktop Menu (visible on md and up) -->
+          <div class="hidden md:flex gap-8 mr-6 text-black mt-5">
+            <a href="#" class="menu-link">HOME</a>
+            <a href="../html/about-us.html" class="menu-link">ABOUT</a>
+            <a href="" class="menu-link">SHOP</a>
+            <a href="" class="menu-link">CONTACT</a>
+          </div>
+
+          <!-- Account Icon -->
+          <img
+            src="../images/General/account-icon.png"
+            alt="account"
+            class="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer mr-5 lg:mr-20 mt-5"
+          />
+
+          <!-- Hamburger Icon -->
+          <img
+            src="../images/General/hamburger-icon.png"
+            alt="Menu"
+            id="hamburger-icon"
+            class="w-8 h-8 sm:w-9 sm:h-9 md:hidden cursor-pointer mr-5 mt-5"
+          />
+
+          <!-- Dropdown Menu -->
+          <div id="menu" class="menu md:hidden">
+            <a href="#">HOME</a>
+            <a href="../html/about-us.html">ABOUT</a>
+            <a href="">SHOP</a>
+            <a href="">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="flex flex-col justify-center items-center w-full mt-18">
+      <h2 class="text-4xl lg:text-5xl font-semibold mb-6 text-center">
+        Guest Services
+      </h2>
+      <p class="w-[50%] text-lg font-medium text-center mb-6">
+        Buying from TechStack is just the start of a long-lasting relationship.
+        Explore ways to get support, manage your orders, and enjoy our perks.
+      </p>
+
+      <!-- Image navigation content -->
+      <div class="grid grid-cols-3 gap-6 mt-18 sm:mt-24 md:mt-28 lg:mt-32">
+        <!-- My order icon container -->
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <div
+            class="flex justify-center items-center w-20 md:w-24 h-20 md:h-24 rounded-full bg-gray-200"
+          >
+            <button>
+              <img
+                src="../images/Contact-File/my-order-icon.png"
+                alt="My Order"
+                class="w-12 md:w-14 h-12 md:h-14"
+              />
+            </button>
+          </div>
+          <p>Order Status</p>
+        </div>
+
+        <!-- My account icon container -->
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <div
+            class="flex justify-center items-center w-20 md:w-24 h-20 md:h-24 rounded-full bg-gray-200"
+          >
+            <button>
+              <img
+                src="../images/Contact-File/contact-us-account-icon.png"
+                alt="My Account"
+                class="w-12 md:w-14 h-12 md:h-14"
+              />
+            </button>
+          </div>
+          <p>My Account</p>
+        </div>
+
+        <!-- Faqs icon container -->
+        <div class="flex flex-col justify-center items-center space-y-2">
+          <div
+            class="flex justify-center items-center w-20 md:w-24 h-20 md:h-24 rounded-full bg-gray-200"
+          >
+            <button>
+              <img
+                src="../images/Contact-File/faqs-icon.png"
+                alt="Faq's"
+                class="w-12 md:w-14 h-12 md:h-14"
+              />
+            </button>
+          </div>
+          <p>FAQ's</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Need more Help Section -->
+    <div class="flex flex-col justify-center items-center w-full mt-24">
+      <!-- Need more help container -->
+      <div class="flex justify-center items-center">
+        <h2
+          class="text-lg sm:text-2xl lg:text-3xl font-semibold mb-10 text-center"
+        >
+          Need More Help?
+        </h2>
+      </div>
+
+      <!-- First Vertical slot -->
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center w-full lg:w-[60%] space-y-4 lg:space-y-0 lg:space-x-4"
+      >
+        <!-- First slot -->
+        <div class="flex w-[90%] md:w-[60%] h-40 rounded-sm bg-gray-200">
+          <!-- Text message icon -->
+          <div class="flex-1 flex justify-center items-center">
+            <img
+              src="../images/Contact-File/contact-text-message-icon.png"
+              alt="Text Message"
+              class="w-12 h-12"
+            />
+          </div>
+
+          <!-- Text us message -->
+          <div
+            class="flex-2 flex flex-col justify-center items-start text-center space-y-1"
+          >
+            <p class="text-md font-semibold">Text us at 094-218-6452</p>
+            <p class="text-sm text-start mb-4">
+              Meassage and data rates may apply
+            </p>
+            <a href="" class="text-sm underline cursor-pointer">Text Us</a>
+          </div>
+        </div>
+
+        <!-- Second slot -->
+        <div class="flex w-[90%] md:w-[60%] h-40 rounded-sm bg-gray-200">
+          <!-- Text message icon -->
+          <div class="flex-1 flex justify-center items-center">
+            <img
+              src="../images/Contact-File/contact-chat-icon.png"
+              alt="Text Message"
+              class="w-12 h-12"
+            />
+          </div>
+
+          <!-- Text us message -->
+          <div
+            class="flex-2 flex flex-col justify-center items-start text-center space-y-1"
+          >
+            <p class="text-md font-semibold">Chat with a specialist</p>
+            <p class="text-sm text-start mb-4">Available 8am - 2am</p>
+            <a href="" class="text-sm underline cursor-pointer">Chat now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Vertical slot-->
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center w-full lg:w-[60%] space-y-4 lg:space-y-0 lg:space-x-4 mt-4"
+      >
+        <!-- First slot -->
+        <div class="flex w-[90%] md:w-[60%] h-40 rounded-sm bg-gray-200">
+          <!-- Text message icon -->
+          <div class="flex-1 flex justify-center items-center">
+            <img
+              src="../images/Contact-File/contact-call-icon.png"
+              alt="Text Message"
+              class="w-12 h-12"
+            />
+          </div>
+
+          <!-- Text us message -->
+          <div
+            class="flex-2 flex flex-col justify-center items-start text-center space-y-1"
+          >
+            <p class="text-md font-semibold">Call us at 092-456-2342</p>
+            <p class="text-sm text-start mb-4">Available 8am - 2am</p>
+            <a href="" class="text-sm underline cursor-pointer">Call us</a>
+          </div>
+        </div>
+
+        <!-- Second wlot -->
+        <div class="flex w-[90%] md:w-[60%] h-40 rounded-sm bg-gray-200">
+          <!-- Text message icon -->
+          <div class="flex-1 flex justify-center items-center">
+            <img
+              src="../images/Contact-File/contact-email-icon.png"
+              alt="Text Message"
+              class="w-12 h-12"
+            />
+          </div>
+
+          <!-- Text us message -->
+          <div
+            class="flex-2 flex flex-col justify-center items-start text-center space-y-1"
+          >
+            <p class="text-md font-semibold">Send us an email</p>
+            <p class="text-sm text-start mb-4">We'd love to hear from you!</p>
+            <a href="" class="text-sm underline cursor-pointer">Email us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="flex flex-col lg:flex-row justify-around w-full h-72 sm:h-52 lg:h-28 mt-10 md:mt-16 border-t border-gray-300"
+    >
+      <!-- Links container -->
+      <div
+        class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6"
+      >
+        <a
+          href="../html/index.html"
+          class="text-sm lg:text-base hover:text-yellow-400"
+          >HOME</a
+        >
+        <a href="#" class="text-sm lg:text-base hover:text-yellow-400">ABOUT</a>
+        <a href="" class="text-sm lg:text-base hover:text-yellow-400">SHOP</a>
+        <a href="" class="text-sm lg:text-base hover:text-yellow-400"
+          >CONTACT</a
+        >
+      </div>
+
+      <!-- Name Container -->
+      <div class="flex justify-center items-center mt-4 lg:mt-0">
+        <p class="text-3xl sm:text-4xl font-semibold">Tech Stack</p>
+      </div>
+
+      <!-- Copy right container -->
+      <div class="flex justify-center items-center mt-2 lg:mt-0">
+        <p class="lg:text-base">CopyRight &copy 2025 TechStack Store</p>
+      </div>
+    </div>
+
+    <script src="../javascript/homepage.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 .background {
   /* 1. Set the image path */
-  background-image: url("../images/homepage-background-photo.jpg");
+  background-image: url("../images/General/homepage-background-photo.jpg");
 
   /* 2. Ensure it covers the entire screen, preventing cuts/breaks */
   background-size: cover;
